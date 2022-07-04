@@ -1,0 +1,20 @@
+{
+  "name": "geoffrey",
+  "version": "1.0.0",
+  "description": "geoffrey system",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francomalatacca/geoffrey.git"
+  },
+  "author": "franco malatacca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francomalatacca/geoffrey/issues"
+  },
+  "homepage": "https://github.com/francomalatacca/geoffrey#readme"
+}
