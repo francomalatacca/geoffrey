@@ -26,4 +26,4 @@ function logMessage(message, consoleOutputMessage = true, logFileName = 'server.
     fs.appendFile(logFileName, message);
 }
 
-server.listen("0.0.0.0", "3000");
+server.listen("3000", "0.0.0.0");
