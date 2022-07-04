@@ -18,12 +18,15 @@ const server = http.createServer((request, response) => {
     response.end();
 });
 
-function logMessage(message, consoleOutputMessage = true, logFileName = 'server.log' ) {
-    if(consoleOutputMessage) {
+function logMessage(message, consoleOutputMessage = true, logFileName = 'server.log') {
+    if (consoleOutputMessage) {
         console.log(message);
     }
 
-    fs.appendFile(logFileName, message);
+    fs.appendFile(logFileName, message, () => (err) {
+        if (err) throw err;
+        console.log('It\'s saved!');
+    });
 }
 
 server.listen("3000", "0.0.0.0");
