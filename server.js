@@ -1,7 +1,11 @@
-const http = require("http");
+const https = require("https");
 const fs = require('fs');
 
-const server = http.createServer((request, response) => {
+const privateKey = fs.readFileSync('private.key', 'utf8');
+const certificate = fs.readFileSync('mysubdomain_mydomain_com.crt', 'utf8');
+const credentials = {key: privateKey, cert: certificate};
+
+const server = https.createServer(credentials, (request, response) => {
     const { rawHeaders, httpVersion, method, socket, url } = request;
     const { remoteAddress, remoteFamily } = socket;
 
