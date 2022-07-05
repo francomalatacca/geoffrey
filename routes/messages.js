@@ -15,7 +15,7 @@ function processIncomingObjects(object) {
                     for (var message in object["entry"]["el"]["value"]["messages"]) {
                         text = ""
                         if(object["entry"]["el"]["value"]["messages"]["type"] == "text") {
-                            text = text + " " + object["entry"]["el"]["value"]["messages"]["text"]
+                            text = text + " " + object["entry"]["el"]["value"]["messages"]["text"]["body"]
                         }
                     }
                     return processMessage(text);
