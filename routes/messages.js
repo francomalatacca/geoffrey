@@ -27,6 +27,7 @@ function processIncomingObjects(object) {
 }
 
 function processMessage(entry) {
+    console.log("processing " + entry)
     return entry == 'ciao' ? 'Hello' : '?';
 }
 module.exports = router;
