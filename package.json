@@ -1,20 +1,16 @@
 {
   "name": "geoffrey",
-  "version": "1.0.0",
-  "description": "geoffrey system",
-  "main": "server.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "npm run test",
-    "start": "node server.js"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/francomalatacca/geoffrey.git"
-  },
-  "author": "franco malatacca",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/francomalatacca/geoffrey/issues"
-  },
-  "homepage": "https://github.com/francomalatacca/geoffrey#readme"
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  }
 }
