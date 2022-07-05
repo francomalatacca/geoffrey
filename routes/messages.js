@@ -24,7 +24,7 @@ function processIncomingObjects(object) {
         }
     }
 }
-}
+
 
 function processMessage(entry) {
     console.log("processing " + entry)
