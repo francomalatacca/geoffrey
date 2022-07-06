@@ -9,7 +9,9 @@ function processIncomingObjects(object) {
                     let changes = object["entry"][el]["changes"];
                     for (var change in changes) {
                         if (changes[change]["field"] == "messages") {
-
+                            if(changes[change]["value"]["display_phone_number"] === '15550655921') {
+                                break;
+                            }
                             let text = ""
                             for (var message in changes[change]["value"]["messages"]) {
 
